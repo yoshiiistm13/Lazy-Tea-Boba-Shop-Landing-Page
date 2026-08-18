@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    /* Colors */
+    --color-primary: #a18361;
+    --color-secondary: #d7d0c7;
+    --color-bg: #f0ebdf;
+    --color-items: #d8d7ce;
+    --color-text-first: #4e4d4d;
+    --color-text-second: #2f5122;
+
+    /* Fonts */
+    --font-title: "Cormorant Garamond", Helvetica;
+    --font-principal: "Playfair Display", sans-serif;
+
+    /* Spacing 
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-bg);
+}
