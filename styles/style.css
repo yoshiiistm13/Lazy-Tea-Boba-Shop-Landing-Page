@@ -1,7 +1,9 @@
 @import url(./main/variables.css);
+
 @import url(./blocks/header.css);
 @import url(./blocks/hero.css);
 @import url(./blocks/form.css);
 @import url(./blocks/features.css);
-@import url(./blocks/reviews.css);
+@import url(./blocks/features.css);
 @import url(./blocks/content.css);
+@import url(./blocks/reviews.css);
