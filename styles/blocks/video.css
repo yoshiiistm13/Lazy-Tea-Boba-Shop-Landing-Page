@@ -23,7 +23,6 @@
     margin: 0 auto;
     overflow: hidden;
     border-radius: 12px;
-   
     background-color: var(--color-bg);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -32,6 +31,9 @@
     color: var(--color-bg);
     font-size: 2rem;
     padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .video__title-container h4 {
@@ -50,8 +52,9 @@
 }
 
 .video__title-container img{
-    width: 12rem;
-    height: 12rem;
+    align-self: center;
+    width: 10rem;
+    height: 10rem;
 }
 
 .video__container iframe{
@@ -60,5 +63,27 @@
     border: none;
     display: block;
    
+}
+
+.btn-franchise {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 32px;
+    background-color: var(--color-bg); /* Toma el color principal de tu paleta */
+    color: var(--color-primary);                 /* Color de texto claro */
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;                    /* Bordes redondeados tipo píldora */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;              /* Suaviza la animación al pasar el mouse */
+}
+
+/* Efecto hover cuando pasan el cursor por encima */
+.btn-franchise:hover {
+    transform: translateY(-3px);            /* Da un pequeño salto hacia arriba elegante */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0.95;
 }
 
