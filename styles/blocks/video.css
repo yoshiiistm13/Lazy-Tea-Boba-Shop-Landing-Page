@@ -1,0 +1,64 @@
+.video{
+    background-color: var(--color-primary);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.video__background{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.video__container{
+    width: 100%;
+    max-width: 260px;   /* Un poco más angosto para que guarde la proporción de 1/4 */
+    height: 460px;      /* Altura proporcional al nuevo ancho */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+   
+    background-color: var(--color-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video__title-container{
+    color: var(--color-bg);
+    font-size: 2rem;
+    padding-right: 5rem;
+}
+
+.video__title-container h4 {
+    color: var(--color-bg);
+    font-size: 2rem;       /* Ajusta el tamaño si lo necesitas más grande o pequeño */
+    text-align: left;      /* Alineado a la izquierda */
+    margin: 1rem 0;   /* Opcional: un pequeño espacio abajo para separarlo de la descripción */
+
+}
+
+
+.video__container-description{
+    font-family: var(--font-principal);
+    font-size: 20px;
+    text-align: left;
+}
+
+.video__title-container img{
+    width: 12rem;
+    height: 12rem;
+}
+
+.video__container iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+   
+}
+

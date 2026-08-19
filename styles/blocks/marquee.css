@@ -1,0 +1,38 @@
+.marquee{
+    width: 100%;
+    margin: 40px 0;
+    background-color: var(--color-text-second);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+.marquee__track{
+    display: flex;
+    width: max-content;
+    animation: scrollMarquee 25s linear infinite;
+    will-change: transform
+}
+
+.marquee__content{
+    font-family: var(--font-principal);
+    color: var(--color-bg);
+    font-size: 1.5rem;
+    border: none;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    padding-left: 40px; /* Usamos padding-left simétrico al gap */
+    flex-shrink: 0;
+}
+
+@keyframes scrollMarquee {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
