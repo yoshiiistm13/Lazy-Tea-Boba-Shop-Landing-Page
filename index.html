@@ -1,141 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lazy Tea Boba Shop Franquicias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <h2 class="header__title">¡Sumate a la nueva franquicia de bebidas innovadoras!</h2>
-        </header>
+      <header class="header">
+        <h2 class="header__title">
+          ¡Sumate a la nueva franquicia de bebidas innovadoras!
+        </h2>
+      </header>
 
-        <section class="hero-section">
-            <div class="hero-section__container">
-                
-                <div class="hero-section__info">
-                    <img class="hero-section__logo" src="assets/icon/Logo BCO.png" alt="">
-                    <h2 class="hero-section__title">La franquicia en tendencía en CDMX</h2>
-                    <p class="hero-section__description">Si te interesa adquirir una franquicia y formar parte de la familia Lazy completa el siguiente formulario y un asesor se pondra en contacto a la brevedad.</p>
-                </div>
+      <section class="hero-section">
+        <div class="hero-section__container">
+          <div class="hero-section__info">
+            <img
+              class="hero-section__logo"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Logo Lazy Tea"
+            />
+            <h2 class="hero-section__title">
+              La franquicia en tendencia en CDMX
+            </h2>
+            <p class="hero-section__description">
+              Si te interesa adquirir una franquicia y formar parte de la
+              familia Lazy completa el siguiente formulario y un asesor se
+              pondrá en contacto a la brevedad.
+            </p>
+          </div>
 
-                <div class="form-section__form">
-                    <form class="form">
+          <div class="form-section__form">
+            <form class="form">
+              <!-- Nombre -->
+              <div class="form__group">
+                <label class="form__label" for="nombre">Nombre</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="nombre"
+                  placeholder="Escribe tu nombre"
+                  required
+                />
+              </div>
 
-                        <!-- Nombre -->
-                        <div class="form__group">
-                        <label class="form__label" for="nombre">Nombre</label>
-                        <input class="form__input" type="text" id="nombre" placeholder="Escribe tu nombre" required>
-                        </div>
+              <!-- Correo -->
+              <div class="form__group">
+                <label class="form__label" for="correo"
+                  >Correo electrónico</label
+                >
+                <input
+                  class="form__input"
+                  type="email"
+                  id="correo"
+                  placeholder="Escribe tu email"
+                  required
+                />
+              </div>
 
-                        <!-- Correo -->
-                        <div class="form__group">
-                        <label class="form__label" for="correo">Correo electrónico</label>
-                        <input class="form__input" type="email" id="correo" placeholder="Escribe tu email" required>
-                        </div>
+              <!-- Teléfono -->
+              <div class="form__group">
+                <label class="form__label" for="telefono">Teléfono</label>
+                <input
+                  class="form__input"
+                  type="tel"
+                  id="telefono"
+                  placeholder="Déjanos tu teléfono"
+                  required
+                />
+              </div>
 
-                        <!-- Teléfono -->
-                        <div class="form__group">
-                        <label class="form__label" for="telefono">Teléfono</label>
-                        <input class="form__input" type="tel" id="telefono" placeholder="Déjanos tu teléfono" required>
-                        </div>
+              <!-- Zona de interés -->
+              <div class="form__group">
+                <label class="form__label" for="zona">Zona de interés</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="zona"
+                  placeholder="¿Dónde quieres poner tu franquicia?"
+                  required
+                />
+              </div>
 
-                        <!-- Zona de interés -->
-                        <div class="form__group">
-                        <label class="form__label" for="zona">Zona de interés</label>
-                        <input class="form__input" type="text" id="zona" placeholder="¿Dónde quieres poner tu franquicia?" required>
-                        </div>
+              <!-- Capital -->
+              <div class="form__group">
+                <label class="form__label" for="capital"
+                  >Tengo un capital</label
+                >
+                <select
+                  class="form__input"
+                  name="capital"
+                  id="capital"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Selecciona tu rango de inversión...
+                  </option>
+                  <option value="250k - 500k">$250,000 - $500,000 MXN</option>
+                  <option value="500k - 750K">$500,000 - $750,000 MXN</option>
+                  <option value="750k - 1M">$750,000 - $1,000,000 MXN</option>
+                  <option value="1M +">Más de $1,000,000.00</option>
+                </select>
+              </div>
 
-                        <!-- Zona de interés -->
-                         <div class="form__group">
-                        <label class="form__label" for="capital">Tengo un capital</label>
-                        <select class="form__input" name="" id="capital" required>
-                            <option value="" disabled selected>Selecciona tu rango de inversión...</option>
-                            <option value="250k - 500k">$250,000 - $500,000 MXN</option>
-                            <option value="500k - 750K">$500,000 - $750,000 MXN</option>
-                            <option value="750k - 1M">$750,000 - $1,000,000 MXN</option>
-                            <option value="1M +">Más de $1,000,000.00</option>
-                        </select>
-                        </div>
+              <button class="form__button" type="submit">
+                ¡Quiero mi franquicia!
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-                        <button class="form__button" type="submit">¡Quiero mi franquicia!</button>
-                    </form>
-                </div>
+      <section class="features">
+        <div class="features__content">
+          <h3 class="features__title">Formá parte de nuestra familia</h3>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Menú Innovador"
+            />
+            <p class="features__item-title"><b>Menú Innovador</b></p>
+            <p class="features__item-description">
+              Tendencias constantes en cada temporada.
+            </p>
+          </div>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Inversión Accesible"
+            />
+            <p class="features__item-title"><b>Inversión Accesible</b></p>
+            <p class="features__item-description">
+              Menor costo y alta rentabilidad.
+            </p>
+          </div>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Retorno Rápido"
+            />
+            <p class="features__item-title"><b>Retorno Rápido</b></p>
+            <p class="features__item-description">
+              Recupera tu inversión en poco tiempo.
+            </p>
+          </div>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Soporte Total"
+            />
+            <p class="features__item-title"><b>Soporte Total</b></p>
+            <p class="features__item-description">
+              Acompañamiento experto desde el día uno.
+            </p>
+          </div>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Ingredientes Premium"
+            />
+            <p class="features__item-title"><b>Ingredientes Premium</b></p>
+            <p class="features__item-description">
+              Sabor auténtico y frescura total.
+            </p>
+          </div>
+          <div class="features__item">
+            <img
+              class="features__item-img"
+              src="./styles/assets/icon/Logo BCO.png"
+              alt="Operación Sencilla"
+            />
+            <p class="features__item-title"><b>Operación Sencilla</b></p>
+            <p class="features__item-description">
+              Proceso fácil y sin personal experto.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <section class="content">
+        <p class="content__title"><b> La mejor boba tea de la ciudad </b></p>
+        <div class="content__gallery">
+          <img
+            src="./styles/assets/images/background/images (1).jfif"
+            alt="Boba Tea 1"
+          />
+          <img
+            src="./styles/assets/images/background/images (2).jfif"
+            alt="Boba Tea 2"
+          />
+          <img
+            src="./styles/assets/images/background/images (3).jfif"
+            alt="Boba Tea 3"
+          />
+        </div>
+      </section>
 
-        
-
-        <section class="features">
-            <div class="features__content">
-                <h3 class="features__title">Formá parte de nuestra familia</h3>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Menú Innovador</b></p>
-                        <p class="features__item-description">Tendencias constantes en cada temporada.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Inversión Accesible</b></p>
-                        <p class="features__item-description">Menor costo y alta rentabilidad.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Retorno Rápido</b></p>
-                        <p class="features__item-description">Recupera tu inversión en poco tiempo.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Soporte Total</b></p>
-                        <p class="features__item-description">Acompañamiento experto desde el día uno.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Ingredientes Premium</b></p>
-                        <p class="features__item-description">Sabor auténtico y frescura total.</p>
-                    </div>
-                    <div class="features__item">
-                        <img class="features__item-img" src="/assets/icon/Logo BCO.png" alt="">
-                        <p class="features__item-title"><b>Operación Sencilla</b></p>
-                        <p class="features__item-description">Proceso fácil y sin personal experto.</p>
-                    </div>
-                </div>
-        </section>
-
-        <section class="content">
-            <p class="content__title"><b> La mejor boba tea de la ciudad </b></p>
-            <div class="content__gallery">
-                <img src="./assets/images/background/images (1).jfif" alt="">
-                <img src="assets/images/background/images (2).jfif" alt="">
-                <img src="assets/images/background/images (3).jfif" alt="">
-            </div>
-
-        </section>
-
-        <section class="reviews">
-            <div class="reviews__content">
-                <h4 class="reviews__title">Nuestros clientes</h4>
-                <div class="reviews__card">
-                    <p class="reviews__user"><b>⭐ Sofía M.</b></p>
-                    <p class="reviews__review">"¡El mejor boba de la zona! El lugar está súper aesthetic para las fotos y las bebidas con tapioca fresca están deliciosas. 100% recomendado."</p>
-                </div>
-                <div class="reviews__card">
-                    <p class="reviews__user"><b>⭐ Carlos R.</b></p>
-                    <p class="reviews__review">"Excelente concepto y atención rápida. Los ingredientes se sienten de súper buena calidad y el sabor es auténtico. ¡Mi nuevo lugar favorito!"</p>
-                </div>
-                <div class="reviews__card">
-                    <p class="reviews__user"><b>⭐ Andrea G.</b></p>
-                    <p class="reviews__review">"Me encantó la variedad de sabores y el ambiente tan relajado. Súper recomendado si quieres probar algo rico y diferente por la tarde."</p>
-                </div>
-            </div>
-        </section>
-        <footer class="footer"></footer>
+      <section class="reviews">
+        <div class="reviews__content">
+          <h4 class="reviews__title">Nuestros clientes</h4>
+          <div class="reviews__card">
+            <p class="reviews__user"><b>⭐ Sofía M.</b></p>
+            <p class="reviews__review">
+              "¡El mejor boba de la zona! El lugar está súper aesthetic para las
+              fotos y las bebidas con tapioca fresca están deliciosas. 100%
+              recomendado."
+            </p>
+          </div>
+          <div class="reviews__card">
+            <p class="reviews__user"><b>⭐ Carlos R.</b></p>
+            <p class="reviews__review">
+              "Excelente concepto y atención rápida. Los ingredientes se sienten
+              de súper buena calidad y el sabor es auténtico. ¡Mi nuevo lugar
+              favorito!"
+            </p>
+          </div>
+          <div class="reviews__card">
+            <p class="reviews__user"><b>⭐ Andrea G.</b></p>
+            <p class="reviews__review">
+              "Me encantó la variedad de sabores y el ambiente tan relajado.
+              Súper recomendado si quieres probar algo rico y diferente por la
+              tarde."
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer"></footer>
     </div>
-</body>
+  </body>
 </html>
