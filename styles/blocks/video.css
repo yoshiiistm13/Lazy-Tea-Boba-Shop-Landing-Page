@@ -48,7 +48,7 @@
 .video__container-description{
     font-family: var(--font-principal);
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 .video__title-container img{

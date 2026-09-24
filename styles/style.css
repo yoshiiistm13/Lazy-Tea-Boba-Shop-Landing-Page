@@ -12,3 +12,259 @@
 @import url(./blocks/franchise.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/maps.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    font-family: var(--font-principal);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.whatsapp-float img {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 40px;          /* Separación desde la parte inferior */
+    right: 40px; 
+    z-index: 1000; 
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover (cuando pasan el cursor por encima) */
+.whatsapp-float img:hover {
+    transform: scale(1.1); /* Crece ligeramente de tamaño */
+}
+
+
+@media (max-width: 767px) {
+    .header__title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        padding: 0 1rem;
+    }
+
+    .hero-section {
+        padding: 32px 16px;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+
+    .hero-section__container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .hero-section__info {
+        padding: 0;
+    }
+
+    .hero-section__logo {
+        width: 11rem;
+        height: 11rem;
+        margin: 0 auto;
+    }
+
+    .hero-section__title {
+        font-size: 2.3rem;
+    }
+
+    .hero-section__description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .form-section__form {
+        margin-top: 0;
+    }
+
+    .form__group {
+        margin-bottom: 1rem;
+    }
+
+    .features {
+        padding: 40px 16px;
+    }
+
+    .features__content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .features__title,
+    .reviews__title,
+    .content__title {
+        font-size: 2.2rem;
+    }
+
+    .content {
+        padding: 40px 16px;
+    }
+
+    .content__gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .reviews {
+        padding: 40px 16px;
+    }
+
+    .reviews__content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reviews__card {
+        padding: 18px 16px;
+    }
+
+    .video {
+        padding: 40px 0;
+    }
+
+    .video__background {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px;
+    }
+
+    .video__title-container {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .video__title-container h4,
+    .video__container-description {
+        text-align: center;
+    }
+
+    .video__container {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .btn-franchise {
+        width: 100%;
+        text-align: center;
+    }
+
+    .marquee {
+        margin-top: 20px;
+        padding: 12px 0;
+    }
+
+    .marquee__content {
+        font-size: 1rem;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    .map__continer {
+        height: 320px;
+    }
+
+    .footer {
+        padding: 3rem 1rem 1.25rem;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header__title {
+        font-size: 2.8rem;
+    }
+
+    .hero-section {
+        padding: 40px 24px;
+    }
+
+    .hero-section__container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 700px;
+    }
+
+    .hero-section__logo {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .features__content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .content__gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reviews__content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .video__background {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .video__title-container {
+        padding-right: 0;
+    }
+
+    .video__container {
+        max-width: 420px;
+        height: 360px;
+    }
+
+    .footer__top {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features__content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .content__gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .reviews__content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer__top {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+}

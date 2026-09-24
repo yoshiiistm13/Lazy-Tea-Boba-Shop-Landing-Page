@@ -23,6 +23,22 @@
   flex-direction: column;
 }
 
+.review__stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0.5rem 0 0.8rem;
+  flex-wrap: nowrap;
+}
+
+.review__star {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+}
+
 .reviews__title {
   grid-column: 1 / -1;
   text-align: center;
