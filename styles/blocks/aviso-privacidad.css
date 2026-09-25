@@ -8,7 +8,6 @@
   --color-dark: #1a2618;
   --color-white: #fffdf9;
   --font-title: "Cormorant Garamond", Helvetica;
-  --font-principal: "Playfair Display", sans-serif;
 }
 
 * {
@@ -17,7 +16,7 @@
 
 .privacidad__body {
   margin: 0;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(190, 190, 190);
   color: var(--color-text-first);
   font-family: var(--font-principal);
 }
@@ -87,6 +86,7 @@
   border-radius: 18px;
   padding: 22px 20px;
   border: 1px solid rgba(161, 131, 97, 0.18);
+  text-align: justify;
 }
 
 .privacidad__section h2 {
@@ -101,6 +101,7 @@
   font-size: 1rem;
   line-height: 1.8;
   color: white;
+  text-align: justify;
 }
 
 .privacidad__section ul {
