@@ -38,7 +38,7 @@
 
 .video__title-container h4 {
     color: var(--color-bg);
-    font-size: 2rem;       /* Ajusta el tamaño si lo necesitas más grande o pequeño */
+    font-size: 1.9rem;       /* Ajusta el tamaño si lo necesitas más grande o pequeño */
     text-align: left;      /* Alineado a la izquierda */
     margin: 1rem 0;   /* Opcional: un pequeño espacio abajo para separarlo de la descripción */
 
@@ -48,7 +48,7 @@
 .video__container-description{
     font-family: var(--font-principal);
     font-size: 20px;
-    text-align: justify;
+    text-align:left;
 }
 
 .video__title-container img{

@@ -12,6 +12,7 @@
 @import url(./blocks/franchise.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/maps.css);
+@import url(./blocks/privacidad.css);
 
 * {
     box-sizing: border-box;
@@ -152,7 +153,7 @@ img {
 
     .video__title-container h4,
     .video__container-description {
-        text-align: center;
+        text-align: justify;
     }
 
     .video__container {
